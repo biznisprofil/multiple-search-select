@@ -1,9 +1,58 @@
-/* Styles go here */
+.c-multiselect {
+  display: block;
+  position: relative; }
+  .c-multiselect .dropdown-menu {
+    min-width: 100%;
+    z-index: 1035; }
 
-.red {
-    background-color: red;
-}
+.c-multiselect__options {
+  max-height: 150px;
+  overflow-y: auto; }
 
-.blue {
-    background-color: blue;
-}
+.c-multiselect__button {
+  position: relative;
+  text-align: left; }
+  .c-multiselect__button .caret {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -2px;
+    vertical-align: middle; }
+
+.c-multiselect__search {
+  padding: 1px 10px 3px; }
+
+.c-multiselect__item {
+  cursor: pointer;
+  padding: 0;
+  color: #000;
+  border-top: 1px solid #fff; }
+  .c-multiselect__item.selected {
+    background: #ec008c;
+    color: #fff; }
+    .c-multiselect__item.selected.hovered {
+      background: #ec008c; }
+  .c-multiselect__item.selected + .selected {
+    border-top-color: rgba(255, 255, 255, 0.2); }
+  .c-multiselect__item.hovered {
+    background: #f5f5f5; }
+  .c-multiselect__item.disable {
+    cursor: not-allowed;
+    background: lightgray;
+    color: gray; }
+  .c-multiselect__item input[type="checkbox"] {
+    cursor: pointer;
+    vertical-align: top; }
+
+.c-multiselect__item-label {
+  width: 100%;
+  position: relative;
+  font-weight: 400;
+  line-height: 1.42857143;
+  padding: 5px 30px 4px 20px;
+  margin: 0; }
+
+.c-multiselect__item-icon {
+  position: absolute;
+  right: 15px;
+  top: 7px; }
